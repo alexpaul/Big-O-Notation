@@ -2,8 +2,15 @@
 
 Big O. Time and Space complexity. 
 
+## Runtime Complexity 
+
+Runtime complexity is described as the performance over time as the size of the input grows. 
+
+
 
 ## Space Complexity 
+
+Space complexity is defined as the amount of memory a given algorithm takes. 
 
 #### Example 1
 
@@ -51,5 +58,18 @@ func pairSum(_ a: Int, _ b: Int) -> Int {
 pairSumSequence(3) // 9
 ```
 
+## Challenges 
+
+#### 1. Challenge 1 
+<details> 
+  <summary>Solution</summary>
+  
+Testing.....  
+
+</details>
+
 ## Resources 
+
+[Cracking the Coding Interview](http://www.crackingthecodinginterview.com/)
+[Big O Cheatsheet](https://www.bigocheatsheet.com/)
 
