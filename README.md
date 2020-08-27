@@ -67,7 +67,7 @@ One of the best examples of `O(log n)` runtime is binary search, where the given
 
 #### Drop the constants 
 
-In calculating Big O runtime we drop the constants. 
+In calculating Big O runtimes we drop the constants. 
 
 Below the given runtime when compounded is `O(n + n)` or `O(2n)` or better written as `O(n)`. 
 
