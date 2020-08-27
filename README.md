@@ -2,7 +2,7 @@
 
 Big O. Time and Space complexity. 
 
-In Computer Science and Programming the way in which we measure the performance and efficiency of algorithms is using Big O notation, _denoted_ `O()`. 
+In Computer Science and Programming the way in which we measure the performance and efficiency of algorithms is using **Big O notation**, _denoted_ `O()`. 
 
 #### Example 1
 
