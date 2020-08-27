@@ -20,6 +20,8 @@ func sum(_ k: Int) -> Int {
 sum(5) // 5 + 4 + 3 + 2 + 1 = 15
 ```
 
+Call Stack 
+
 <pre> 
 sum(5)
   => sum(4)
