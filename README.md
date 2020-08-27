@@ -47,7 +47,7 @@ func compoundFuncOne(_ arrA: [Int], _ arrB: [Int]) {
 }
 ```
 
-In this example we perform work in the inner `for loop` for every element in the outer for loop therefore we multiply the runtimes. 
+In this example we perform work in the inner `for loop` for every element in the outer `for loop` therefore we multiply the runtimes. 
 
 The runtime becomes `O(A * B)`. 
 
