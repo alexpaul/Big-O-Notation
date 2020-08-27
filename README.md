@@ -65,6 +65,24 @@ func compoundFuncTwo(_ arrA: [Int], _ arrB: [Int]) {
 
 One of the best examples of `O(log n)` runtime is binary search, where the given sorted array is cut in half on each search. Similar algorithms that divides the problem in halves like merge sort, quicksort do have `O(log n)` runtime in their final runtimes but since more work is involved those end up with `O(n log n)` runtimes. 
 
+#### Drop the constants 
+
+In calculating Big O runtime we drop the constants. 
+
+Below the given runtime when compounded is `O(n + n)` or `O(2n)` or better written as `O(n)`. 
+
+```swift 
+let names = ["Alex", "Paul"]
+
+for char in names {
+  print(char.lowercased())
+}
+
+for char in names {
+  print(char.uppercased())
+}
+```
+
 
 ## Space Complexity 
 
