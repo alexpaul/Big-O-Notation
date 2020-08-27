@@ -235,13 +235,18 @@ The runtime is `O(ab)` regardless of the third `for loop`, remember when it come
 What is the runtime complexity of the given algorithm? 
 
 ```swift
-
+func firstHalf(_ arr: [Int]) {
+  for i in 0..<arr.count / 2 {
+    print(arr[i])
+  }
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
-
+The runtime is `O(n)` despite the fact that we only iterate through first half of the array. 
+  
 </details>
 
 
