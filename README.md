@@ -18,7 +18,7 @@ func calculateAverageAge(_ ages: [Int]) -> Double {
 }
 ```
 
-![linear graph](https://www.xceleratemaths.com/algebra/images/ex1-wages.gif)
+![big O chart](https://miro.medium.com/max/1200/1*_nsMVEEkIr1CH8aHjTNbzA.jpeg)
 
 ## Runtime Complexity 
 
