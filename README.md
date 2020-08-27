@@ -136,7 +136,7 @@ pairSumSequence(3) // 9
 
 ## Challenges 
 
-#### 1. Challenge 1
+#### Challenge 1
 
 What is the runtime complexity of the given algorithm? 
 
@@ -158,6 +158,141 @@ func sumProduct(_ arr: [Int]) {
   <summary>Solution</summary>
   
 `O(n)` because we add the runtimes and since both for loops are iterating through the same array denoted a `n` it is `O(n)`
+
+</details>
+
+#### Challenge 2
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+func printPairs(_ arr: [Int]) {
+  for i in 0..<arr.count {
+    for j in 0..<arr.count {
+      print("\(arr[i]), \(arr[j])")
+    }
+  }
+}
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+`O(n ^ 2)` here the first for loop calls the inner for loop on each of it's elements, so we multiply the runtimes. Since both are the same collection and we use `n` to represent the collection we say the runtime is `n * n ` or `O(n ^ 2)`.
+
+</details>
+
+#### Challenge 3
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+#### Challenge 4
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+#### Challenge 5
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+
+#### Challenge 6
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+
+#### Challenge 7
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+#### Challenge 8
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+#### Challenge 9
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+#### Challenge 10
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
 
 </details>
 
