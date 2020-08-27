@@ -11,7 +11,7 @@ Runtime complexity is described as the performance over time as the size of the 
 
 #### Example 1
 
-In this example the performance of `calculateAverageAge` is `O(n)`, linear. As the size of the `ages` array grows the efficiency of this algorithm grows linearly.
+In the example below the runtime complexity of `calculateAverageAge` is `O(n)`, read (big O of n), linear. As the size of the `ages` array grows the efficiency of this algorithm grows linearly.
 
 ```swift 
 func calculateAverageAge(_ ages: [Int]) -> Double {
