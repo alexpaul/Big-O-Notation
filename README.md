@@ -187,13 +187,22 @@ func printPairs(_ arr: [Int]) {
 What is the runtime complexity of the given algorithm? 
 
 ```swift
-
+func printUnorderedPairs(_ arrA: [Int], _ arrB: [Int]) {
+  for i in 0..<arrA.count {
+    for j in 0..<arrB.count {
+      if arrA[i] < arrB[j] {
+        print("\(arrA[i]), \(arrB[j])")
+      }
+    }
+  }
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
-
+`O(ab)`, here since we have two different arrays a and b we treat the runtime using different variables a and b. As before we multiply such runtimes where the for loops are nested and result to a runtime of `O(a * b)` or `O(ab)`. 
+  
 </details>
 
 #### Challenge 4
