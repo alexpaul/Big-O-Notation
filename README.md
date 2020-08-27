@@ -118,11 +118,26 @@ pairSumSequence(3) // 9
 
 ## Challenges 
 
-#### 1. Challenge 1 
+#### 1. Challenge 1
+
+```swift
+func sumProduct(_ arr: [Int]) {
+  var sum = 0
+  var product = 1
+  for num in arr {
+    sum += num
+  }
+  for num in arr {
+    product *= num
+  }
+  print("sum is \(sum), and product is \(product)")
+}
+```
+
 <details> 
   <summary>Solution</summary>
   
-Testing.....  
+`O(n)` because we add the runtimes and since both for loops are iterating through the same array denoted a `n` it is `O(n)`
 
 </details>
 
