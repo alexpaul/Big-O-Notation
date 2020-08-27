@@ -30,6 +30,38 @@ The Big O chart below shows common runtime complexities.
 ![big O chart](https://miro.medium.com/max/1200/1*_nsMVEEkIr1CH8aHjTNbzA.jpeg)
 
 
+#### Multi-Part Algorithms 
+
+In this example the runtimes are added because we finish the work of the first `for loop` before doing the second. 
+
+So we conclude that this runtime is `O(A + B)`. 
+
+```swift 
+func compoundFuncOne(_ arrA: [Int], _ arrB: [Int]) {
+  for num in arrA {
+    print(num)
+  }
+  for num in arrB {
+    print(num)
+  }
+}
+```
+
+In this example we perform work in the inner `for loop` for every element in the outer for loop therefore we multiply the runtimes. 
+
+The runtime becomes `O(A * B)`. 
+
+```swift 
+func compoundFuncTwo(_ arrA: [Int], _ arrB: [Int]) {
+  for a in arrA {
+    for b in arrB {
+      print("\(a) + \(b)")
+    }
+  }
+}
+```
+
+
 ## Space Complexity 
 
 Space complexity is defined as the amount of memory a given algorithm takes. 
