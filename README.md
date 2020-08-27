@@ -61,9 +61,9 @@ func compoundFuncTwo(_ arrA: [Int], _ arrB: [Int]) {
 }
 ```
 
-#### `O(log N)` runtime
+#### `O(log n)` runtime
 
-One of the best examples of `O(log N)` runtime is binary searh, where the given sorted array is cut in half on each search. Similar algorithms that divides the problem in halves like merge sort, quicksort do have `O(log N)` runtime in their final runtimes but since more work is involved thos end up with `O(N log N)` runtimes. 
+One of the best examples of `O(log n)` runtime is binary search, where the given sorted array is cut in half on each search. Similar algorithms that divides the problem in halves like merge sort, quicksort do have `O(log n)` runtime in their final runtimes but since more work is involved those end up with `O(n log n)` runtimes. 
 
 
 ## Space Complexity 
