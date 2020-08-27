@@ -25,6 +25,8 @@ func calculateAverageAge(_ ages: [Int]) -> Double {
 }
 ```
 
+The Big O chart below shows common runtime complexities. 
+
 ![big O chart](https://miro.medium.com/max/1200/1*_nsMVEEkIr1CH8aHjTNbzA.jpeg)
 
 
