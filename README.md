@@ -2,6 +2,24 @@
 
 Big O. Time and Space complexity. 
 
+In Computer Science and Programming the way in which we measure the performance and efficiency of algorithms is using Big O notation, _denoted_ `O()`. 
+
+#### Example 1
+
+In this example the performance of `calculateAverageAge` is `O(n)`, linear. As the size of the `ages` array grows the efficiency of this algorithm remains linear.
+
+```swift 
+func calculateAverageAge(_ ages: [Int]) -> Double {
+  var sumOfAges = 0
+  for age in ages {
+    sumOfAges += age
+  }
+  return Double(sumOfAges / ages.count)
+}
+```
+
+![linear graph](https://www.xceleratemaths.com/algebra/images/ex1-wages.gif)
+
 ## Runtime Complexity 
 
 Runtime complexity is described as the performance over time as the size of the input grows. 
