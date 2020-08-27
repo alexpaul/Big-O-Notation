@@ -31,5 +31,25 @@ sum(5)
           => sum(0)
 </pre>
 
+#### Example 2 
+
+In this example though we are calling `pairSum()` n times, the calls do not remain on the call stack like in `Example 1` so here the space complexity is constant `O(1)`.
+
+```swift 
+func pairSumSequence(_ k: Int) -> Int {
+  var sum = 0
+  for i in 0..<k {
+    sum += pairSum(i, i + 1)
+  }
+  return sum
+}
+
+func pairSum(_ a: Int, _ b: Int) -> Int {
+  return a + b
+}
+
+pairSumSequence(3) // 9
+```
+
 ## Resources 
 
