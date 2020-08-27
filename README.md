@@ -88,6 +88,6 @@ Testing.....
 
 ## Resources 
 
-[Cracking the Coding Interview](http://www.crackingthecodinginterview.com/)
-[Big O Cheatsheet](https://www.bigocheatsheet.com/)
+1. [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/)
+2. [Big O Cheatsheet](https://www.bigocheatsheet.com/)
 
