@@ -120,6 +120,8 @@ pairSumSequence(3) // 9
 
 #### 1. Challenge 1
 
+What is the runtime complexity of the given algorithm? 
+
 ```swift
 func sumProduct(_ arr: [Int]) {
   var sum = 0
