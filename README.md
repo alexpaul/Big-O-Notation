@@ -1,4 +1,4 @@
-# Big O
+# Big O Notation
 
 Big O. Time and Space complexity. 
 
