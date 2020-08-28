@@ -458,17 +458,48 @@ func square(_ value: Int) -> Int {
 What is the space complexity of the given algorithm? 
 
 ```swift
-
+func sayHiNTimes(_ k: Int) {
+  guard k > 0 else {
+    print("Be polite")
+    return
+  }
+  for _ in 0..<k {
+    print("hi")
+  }
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
+This algorithim is not taking up extra memory than supplied by the input. The input passed in is a constant, k of type `Int` which takes up 8 bytes and we disregard in our space complexity calculations, therefore the space complexity is `O(1)`. 
 
 </details>
 
 
 #### Challenge 5
+
+What is the space complexity of the given algorithm? 
+
+```swift
+func listOfHiTimes(_ k: Int) -> [Int] {
+  guard k > 0 else { return [] }
+  var list = [Int]()
+  for i in 0..<k {
+    list.append(i)
+  }
+  return list
+}
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+In this example the variable `list` array scales linearlly with the size of the input `k` which consumes memory inside the `for` loop when values are appending to it. Here the space complexity is `O(n)`.
+
+</details>
+
+#### Challenge 6
 
 What is the space complexity of the given algorithm? 
 
