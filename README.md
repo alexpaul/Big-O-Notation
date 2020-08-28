@@ -83,6 +83,19 @@ for char in names {
 }
 ```
 
+## Some runtimes of Swift Built-in types 
+
+#### `contains(_:)` on a Array 
+
+`O(n)`
+
+#### `contains(_:)` on a Set 
+
+`O(1)`
+
+#### `sorted()` on a collection 
+
+`O(n log n)`
 
 ## Space Complexity 
 
