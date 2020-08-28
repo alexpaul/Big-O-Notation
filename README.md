@@ -13,7 +13,7 @@ Runtime complexity is described as the performance over time as the size of the 
 
 In the example below the runtime complexity of `calculateAverageAge` is `O(n)`, read (big O of n). As the size of the `ages` array grows the efficiency of this algorithm grows linearly.
 
-It is `O(n)` since we are iterating through each element, represented as `n` in the `ages` array. 
+It is `O(n)` since we are iterating through each element, represented as `n` in the `ages` array. `n` is the length of the array.
 
 ```swift 
 func calculateAverageAge(_ ages: [Int]) -> Double {
@@ -32,9 +32,9 @@ The Big O chart below shows common runtime complexities.
 
 #### Multi-Part Algorithms 
 
-In this example the runtimes are added because we finish the work of the first `for loop` before doing the second. 
+In this example the runtimes are added because we finish the work of the first `for loop` before running the second `for loop`. 
 
-So we conclude that this runtime is `O(A + B)`. 
+So we conclude that this runtime is `O(A + B)`. We use the variables `A` and `B` to represent each array since they are different. If the two arrays were the same the runtime would be for example `A` + `A` which would be `O(A)` since we ignore constants.  
 
 ```swift 
 func compoundFuncOne(_ arrA: [Int], _ arrB: [Int]) {
@@ -49,7 +49,7 @@ func compoundFuncOne(_ arrA: [Int], _ arrB: [Int]) {
 
 In this example we perform work in the inner `for loop` for every element in the outer `for loop` therefore we multiply the runtimes. 
 
-The runtime becomes `O(A * B)`. 
+The runtime becomes `O(A * B)` or `O(AB)`. 
 
 ```swift 
 func compoundFuncTwo(_ arrA: [Int], _ arrB: [Int]) {
@@ -63,7 +63,9 @@ func compoundFuncTwo(_ arrA: [Int], _ arrB: [Int]) {
 
 #### `O(log n)` runtime
 
-One of the best examples of `O(log n)` runtime is binary search, where the given sorted array is cut in half on each search. Similar algorithms that divides the problem in halves like merge sort, quicksort do have `O(log n)` runtime in their final runtimes but since more work is involved those end up with `O(n log n)` runtimes. 
+One of the best examples of `O(log n)` runtime is binary search, where the given sorted array is cut in half on each search. 
+
+Similar algorithms that divides problems in halves like merge sort, quicksort do have `O(log n)` runtime in their final runtimes but since more work is involved those end up with `O(n log n)` runtimes. 
 
 #### Drop the constants 
 
@@ -103,7 +105,7 @@ for char in names {
 
 ## Space Complexity 
 
-Space complexity is defined as the amount of memory a given algorithm takes. 
+Space complexity is defined as the amount of memory a given algorithm requires. 
 
 #### Example 1
 
