@@ -119,9 +119,11 @@ Space complexity is defined as the amount of memory a given algorithm requires.
 | Float |	4bytes | 1.2E-38 to 3.4E+38 (~6 digits) |
 | Double | 8bytes | 2.3E-308 to 1.7E+308 (~15 digits) |
 
+> Note: If you're on a 64-bit platform, Int is the same size a Int64. You can try this in playgrounds by running `print(Int.max)`. On my machine the output is `9223372036854775807`.
+
 #### Example 1 
 
-Here the `add(:_)` function takes two inputs of type `Int` and returns and `Int`. Each of those variables take up `constant` memory, therefore the space complexity is `O(1)`.  
+Here the `add(:_)` function takes two inputs of type `Int` and returns and `Int`. Each of those variables take up `constant` memory or `8 bytes` each on a 64-bit platform like macOS, we calculate the space each variable takes which is 8 bytes from variable `a` + 8 bytes for variable `b` which sums up to 16 bytes, therefore when concluding the big O complexities we ignore constants and get a space complexity of `O(1)`.  
 
 ```swift 
 func add(_ a: Int, _ b: Int) -> Int {
@@ -132,6 +134,8 @@ func add(_ a: Int, _ b: Int) -> Int {
 #### Example 2 
 
 The `addSavings(:_)` function takes an input array `savings` and iterates this array for each `Double` element it contains, since this array is not a constant and has `n` elements we have to consider this when calculating space complexity, therefore we conclude that the amount of memory it takes for the given algorithm is `O(n)`. 
+
+Space complexity calculation: size of array * memory per element, n * 8 bytes, since we ignore the constant the space complexity is `O(n)`. 
 
 ```swift 
 func addSavings(_ savings: [Double]) -> Double {
