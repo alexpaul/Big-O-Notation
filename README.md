@@ -97,6 +97,10 @@ for char in names {
 
 `O(n log n)`
 
+#### `map()`, `filter()`, `reduce()`
+
+`O(n)`
+
 ## Space Complexity 
 
 Space complexity is defined as the amount of memory a given algorithm takes. 
