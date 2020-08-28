@@ -107,6 +107,18 @@ for char in names {
 
 Space complexity is defined as the amount of memory a given algorithm requires. 
 
+
+| Type | Bit Width | Range |
+|:-----:|:------:|:------:|
+| Int8 | 1byte | -127 to 127 |
+| UInt8 | 1byte	| 0 to 255 |
+| Int32 |	4bytes | -2147483648 to 2147483647 |
+| UInt32 | 4bytes | 0 to 4294967295 |
+| Int64 |	8bytes | -9223372036854775808 to 9223372036854775807 |
+| UInt64 | 8bytes | 0 to 18446744073709551615 |
+| Float |	4bytes | 1.2E-38 to 3.4E+38 (~6 digits) |
+| Double | 8bytes | 2.3E-308 to 1.7E+308 (~15 digits) |
+
 #### Example 1 
 
 Here the `add(:_)` function takes two inputs of type `Int` and returns and `Int`. Each of those variables take up `constant` memory, therefore the space complexity is `O(1)`.  
@@ -178,6 +190,8 @@ pairSumSequence(3) // 9
 ```
 
 ## Challenges 
+
+## 1. Runtime Complexity
 
 #### Challenge 1
 
@@ -363,6 +377,9 @@ What is the runtime complexity of the given algorithm?
   
 
 </details>
+
+## 2. Space Complexity
+
 
 ## Resources 
 
