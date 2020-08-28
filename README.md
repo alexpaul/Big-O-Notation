@@ -117,7 +117,7 @@ for char in names {
 
 ## Space Complexity 
 
-Space complexity is defined as the amount of memory a given algorithm requires. 
+Space complexity is defined as the amount of memory needed for a given algorithm. As the input sizes increases the amount of space increases accordingly. 
 
 
 | Type | Bit Width | Range |
