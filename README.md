@@ -8,6 +8,18 @@ In Computer Science and Programming the way in which we measure the performance 
 
 Runtime complexity is used to describe the efficiency of a given algorithm as the size of the input grows. 
 
+| Big O Notation | Name | 
+|:-----:|:------:|
+| O(1) | constant |
+| O(log n) | logarithmic	| 
+| O(n) | linear	| 
+| O(n log n) | linearithmic	| 
+| O(n ^ 2) | quadratic	| 
+| O(n ^ 3) | cubic	| 
+| O(n ^ y) | polynomial	| 
+| O(2 ^ n) | exponential	| 
+| O(n!) | factorial	| 
+
 
 #### Example 1
 
