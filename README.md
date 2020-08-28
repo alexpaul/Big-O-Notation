@@ -428,12 +428,15 @@ Here we have an array of Double, the size of a Double is 8 bytes. The array has 
 What is the runtime complexity of the given algorithm? 
 
 ```swift
-
+func square(_ value: Int) -> Int {
+  return value * value
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
+`O(1)`
 
 </details>
 
