@@ -107,35 +107,59 @@ for char in names {
 
 Space complexity is defined as the amount of memory a given algorithm requires. 
 
-#### Example 1
+#### Example 1 
+
+Here the `add(:_)` function takes two inputs of type `Int` and returns and `Int`. Each of those variables take up `constant` memory, therefore the space complexity is `O(1)`.  
+
+```swift 
+func add(_ a: Int, _ b: Int) -> Int {
+  return a + b
+}
+```
+
+#### Example 2 
+
+The `addSavings(:_)` function takes an input array `savings` and iterates this array for each `Double` element it contains, since this array is not a constant and has `n` elements we have to consider this when calculating space complexity, therefore we conclude that the amount of memory it takes for the given algorithm is `O(n)`. 
+
+```swift 
+func addSavings(_ savings: [Double]) -> Double {
+  var sum = 0.0
+  for saving in savings {
+    sum += saving
+  }
+  return sum
+}
+```
+
+#### Example 3
 
 In this example the `sum(_:)` function is being called recursively and decrementing the value of `k` until it reaches the `base case` of 0 and returns the value from the `call stack`. Here the `runtime complexity` is `O(n)` as we count how many times the recursive call happens and the `space complexity` is also `O(n)` as it takes space on the call stack. 
 
 ```swift 
-func sum(_ k: Int) -> Int {
+func recursionSum(_ k: Int) -> Int {
   guard k > 0 else {
     return 0
   }
-  return k + sum(k - 1)
+  return k + recursionSum(k - 1)
 }
 
-sum(5) // 5 + 4 + 3 + 2 + 1 = 15
+recursionSum(5) // 5 + 4 + 3 + 2 + 1 = 15
 ```
 
 Call Stack 
 
 <pre> 
-sum(5)
-  => sum(4)
-    => sum(3)
-      => sum(2)
-        => sum(1) 
-          => sum(0)
+recursionSum(5)
+  => recursionSum(4)
+    => recursionSum(3)
+      => recursionSum(2)
+        => recursionSum(1) 
+          => recursionSum(0)
 </pre>
 
-#### Example 2 
+#### Example 4 
 
-In this example though we are calling `pairSum()` n times, the calls do not remain on the call stack like in `Example 1` so here the space complexity is constant `O(1)`.
+In this example though we are calling `pairSum()` n times, the calls do not remain on the call stack like in `recursionSum(:_)` so here the space complexity is constant `O(1)`.
 
 ```swift 
 func pairSumSequence(_ k: Int) -> Int {
@@ -344,4 +368,5 @@ What is the runtime complexity of the given algorithm?
 
 1. [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/)
 2. [Big O Cheatsheet](https://www.bigocheatsheet.com/)
+3. [Understanding Space Complexity](https://www.baeldung.com/cs/space-complexity)
 
