@@ -384,6 +384,88 @@ What is the runtime complexity of the given algorithm?
 
 ## 2. Space Complexity
 
+#### Challenge 1
+
+What is the space complexity of the given algorithm? 
+
+```swift
+func addNumbers(a: Int, b: Int, c: Int) -> Int {
+  return a + b + c
+}
+```
+
+<details> 
+  <summary>Solution</summary>
+
+Space complexity is `O(1)`. a + b + c or 8 bytes + 8 bytes + 8 bytes = 24 bytes, we ignore constants as with calculating runtime and get a constant space complexity. 
+
+</details>
+
+#### Challenge 2
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+func calculateShoppingCart(prices: [Double]) -> Double {
+  var totalPrice = 0.0
+  for price in prices {
+    totalPrice += price
+  }
+  return totalPrice
+}
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+Here we have an array of Double, the size of a Double is 8 bytes. The array has n elements. If we calculate each element's space needed for the for loop we see that n (size of array) * 8 bytes equates to a space complexity of `O(n * 8 bytes)` or `O(n)` again as we ignore the constant space taken. 
+
+</details>
+
+
+#### Challenge 3
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+
+#### Challenge 4
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
+
+
+#### Challenge 5
+
+What is the runtime complexity of the given algorithm? 
+
+```swift
+
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+
+</details>
 
 ## Resources 
 
