@@ -85,7 +85,7 @@ for char in names {
 }
 ```
 
-## Some runtimes of Swift Built-in types 
+#### Some runtimes of Swift Built-in types 
 
 #### `contains(_:)` on a Array 
 
