@@ -415,7 +415,7 @@ Space complexity is `O(1)`. a + b + c or 8 bytes + 8 bytes + 8 bytes = 24 bytes,
 
 #### Challenge 2
 
-What is the runtime complexity of the given algorithm? 
+What is the space complexity of the given algorithm? 
 
 ```swift
 func calculateShoppingCart(prices: [Double]) -> Double {
@@ -437,7 +437,7 @@ Here we have an array of Double, the size of a Double is 8 bytes. The array has 
 
 #### Challenge 3
 
-What is the runtime complexity of the given algorithm? 
+What is the space complexity of the given algorithm? 
 
 ```swift
 func square(_ value: Int) -> Int {
@@ -455,7 +455,7 @@ func square(_ value: Int) -> Int {
 
 #### Challenge 4
 
-What is the runtime complexity of the given algorithm? 
+What is the space complexity of the given algorithm? 
 
 ```swift
 
@@ -470,7 +470,7 @@ What is the runtime complexity of the given algorithm?
 
 #### Challenge 5
 
-What is the runtime complexity of the given algorithm? 
+What is the space complexity of the given algorithm? 
 
 ```swift
 
