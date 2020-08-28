@@ -6,7 +6,7 @@ In Computer Science and Programming the way in which we measure the performance 
 
 ## Runtime Complexity 
 
-Runtime complexity is described as the performance over time as the size of the input grows. 
+Runtime complexity is used to describe the efficiency of a given algorithm as the size of the input grows. 
 
 
 #### Example 1
