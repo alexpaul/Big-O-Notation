@@ -69,7 +69,7 @@ One of the best examples of `O(log n)` runtime is binary search, where the given
 
 In calculating Big O runtimes we drop the constants. 
 
-Below the given runtime when compounded is `O(n + n)` or `O(2n)` or better written as `O(n)`. 
+Below the given runtime is `O(n + n)` or `O(2n)` or better written as `O(n)` since we ignore constants in runtime calculations. 
 
 ```swift 
 let names = ["Alex", "Paul"]
