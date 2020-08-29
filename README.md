@@ -519,12 +519,40 @@ In this example the variable `list` array scales linearlly with the size of the 
 What is the space complexity of the given algorithm? 
 
 ```swift
-
+func printList(_ list: [Int]) {
+  for i in 0..<list.count {
+    for j in 0..<list.count {
+      print("\(list[i]), \(list[j])")
+    }
+  }
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
+In this example no auxillary space is used by the `printList(:_)` function. Recall we do not count the input's memory footprint when calculating space complexity. We conclude that the space complexity is `O(1)`. 
+
+</details>
+
+#### Challenge 7
+
+What is the space complexity of the given algorithm? 
+
+```swift
+func inputSize(_ size: Int) {
+  var arr = [Int]()
+  for i in 0..<size {
+    arr.append(i)
+  }
+  print(arr)
+}
+```
+
+<details> 
+  <summary>Solution</summary>
+  
+An array of size `n` has been allocated in the `inputSize(_:)` function, when we calculate the memory footprint we see that `n * 8 bytes` results in a space complexity of `O(n)`.
 
 </details>
 
@@ -536,4 +564,6 @@ What is the space complexity of the given algorithm?
 4. [Interview Cake - Big O Notation](https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity?)
 5. [8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
 6. [Apple docs - Memory footprint of a given instance](https://developer.apple.com/documentation/swift/memorylayout/2486283-size)
+7. [moducode - Time & Space Complexity in Functions – Big O Notation
+](https://moducode.com/blog/time-space-complexity-functions-big-o-notation/)
 
