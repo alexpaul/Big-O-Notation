@@ -117,7 +117,9 @@ for char in names {
 
 ## Space Complexity 
 
-Space complexity is defined as the amount of memory needed for a given algorithm. As the input sizes increases the amount of space increases accordingly. 
+Space complexity is defined as the amount of memory needed for a given algorithm. As the input size of an algorithm increases the amount of space increases accordingly. 
+
+> Auxiliary space is extra space or temporary space used by the algorithms during its execution.
 
 
 | Type | Bit Width | Range |
