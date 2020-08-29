@@ -135,6 +135,19 @@ Space complexity is defined as the amount of memory needed for a given algorithm
 
 > Note: If you're on a 64-bit platform, Int is the same size a Int64. You can try this in playgrounds by running `print(Int.max)`. On my machine the output is `9223372036854775807`.
 
+#### Use `size(ofValue)` from the `MemoryLayout` enum to find out the size of an instance
+
+```swift 
+let intValue = 10
+let intSize = MemoryLayout.size(ofValue: intValue) // 8 bytes
+
+MemoryLayout<Int>.size // 8
+MemoryLayout<Double>.size // 8
+MemoryLayout<Float>.size // 4
+MemoryLayout<Int8>.size // 1
+MemoryLayout<String>.size // 16
+```
+
 #### Example 1 
 
 Here the `add(:_)` function takes two inputs of type `Int` and returns and `Int`. Each of those variables take up `constant` memory or `8 bytes` each on a 64-bit platform like macOS, we calculate the space each variable takes which is 8 bytes from variable `a` + 8 bytes for variable `b` which sums up to 16 bytes, therefore when concluding the big O complexities we ignore constants and get a space complexity of `O(1)`.  
