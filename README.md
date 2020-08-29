@@ -564,6 +564,5 @@ An array of size `n` has been allocated in the `inputSize(_:)` function, when we
 4. [Interview Cake - Big O Notation](https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity?)
 5. [8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
 6. [Apple docs - Memory footprint of a given instance](https://developer.apple.com/documentation/swift/memorylayout/2486283-size)
-7. [moducode - Time & Space Complexity in Functions – Big O Notation
-](https://moducode.com/blog/time-space-complexity-functions-big-o-notation/)
+7. [moducode - Time & Space Complexity in Functions – Big O Notation](https://moducode.com/blog/time-space-complexity-functions-big-o-notation/)
 
