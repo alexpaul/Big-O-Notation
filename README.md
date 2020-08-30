@@ -5,7 +5,7 @@ Big O. Time and Space complexity.
 In Computer Science and Programming the way in which we measure the performance and efficiency of algorithms is using **Big O notation**, _denoted_ `O()`. 
 
 Some rules when calculating Big O: 
-* Different steps not when not nested gets added. 
+* Different steps when not nested gets added. 
 * Nested steps gets multiplied, pay close attention to the collection variable name.
 * We drop the constants as we are only concerned with how the algorithm scales with repect to the runtime. 
 * If the inputs are different, we use different variable names. 
