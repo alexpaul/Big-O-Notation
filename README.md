@@ -28,6 +28,9 @@ Runtime complexity is used to describe the efficiency of a given algorithm as th
 | O(n!) | factorial	| 
 
 
+[Swift Playgrounds with some runtime examples](https://github.com/alexpaul/Lecture-Resources/blob/master/Unit2/Big-O-Notation.playground/Contents.swift)
+
+
 #### Example 1
 
 In the example below the runtime complexity of `calculateAverageAge` is `O(n)`, read (big O of n). As the size of the `ages` array grows the efficiency of this algorithm grows linearly.
