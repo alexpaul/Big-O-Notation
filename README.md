@@ -6,6 +6,7 @@ In Computer Science and Programming the way in which we measure the performance 
 
 Some rules when calculating Big O: 
 * Different steps not nested gets added. 
+* Nested steps gets multiplies.
 * We drop the constants as we are only concerned with how the algorithm scales with repect to the runtime. 
 * If the inputs are different, we use different variable names. 
 * In an algorithm we drop the non-dominant terms e.g `O(n + n ^ 2)` becomes `O(n ^ 2)`. 
