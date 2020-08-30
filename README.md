@@ -350,15 +350,12 @@ The runtime is `O(n)` despite the fact that we only iterate through first half o
 
 #### Challenge 6
 
-What is the runtime complexity of the given algorithm? 
-
-```swift
-
-```
+You are looking for a specific value in a binary tree, but the tree is not a binary search tree. What is the runtime complexity? 
 
 <details> 
   <summary>Solution</summary>
   
+If the tree is not a BST, then worst case is you have to visit each node making it a runtime of `O(n)`. 
 
 </details>
 
@@ -368,12 +365,19 @@ What is the runtime complexity of the given algorithm?
 What is the runtime complexity of the given algorithm? 
 
 ```swift
-
+func product(_ a: Int, _ b: Int) -> Int {
+  var sum = 0
+  for _ in 0..<b {
+    sum += a
+  }
+  return sum
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
+The runtime in this example is `O(b)`. 
 
 </details>
 
@@ -382,42 +386,22 @@ What is the runtime complexity of the given algorithm?
 What is the runtime complexity of the given algorithm? 
 
 ```swift
-
+func power(_ a: Int, _ b: Int) -> Int {
+  if b < 0 { return 0 }
+  else if  b == 0 { return 1 }
+  else {
+    return a * power(a, b - 1)
+  }
+}
 ```
 
 <details> 
   <summary>Solution</summary>
   
+In this recursive call, at each call to `power(:_)` b is decremented by 1, thus we conclude that the call stack add n calls and the runtime is `O(n)`. 
 
 </details>
 
-#### Challenge 9
-
-What is the runtime complexity of the given algorithm? 
-
-```swift
-
-```
-
-<details> 
-  <summary>Solution</summary>
-  
-
-</details>
-
-#### Challenge 10
-
-What is the runtime complexity of the given algorithm? 
-
-```swift
-
-```
-
-<details> 
-  <summary>Solution</summary>
-  
-
-</details>
 
 ## 2. Space Complexity
 
