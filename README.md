@@ -259,6 +259,8 @@ func sumProduct(_ arr: [Int]) {
 
 </details>
 
+</br>
+
 #### Challenge 2
 
 What is the runtime complexity of the given algorithm? 
@@ -279,6 +281,8 @@ func printPairs(_ arr: [Int]) {
 `O(n ^ 2)` here the first for loop calls the inner for loop on each of it's elements, so we multiply the runtimes. Since both are the same collection and we use `n` to represent the collection we say the runtime is `n * n ` or `O(n ^ 2)`.
 
 </details>
+
+</br>
 
 #### Challenge 3
 
@@ -302,6 +306,8 @@ func printUnorderedPairs(_ arrA: [Int], _ arrB: [Int]) {
 `O(ab)`, here since we have two different arrays a and b we treat the runtime using different variables a and b. As before we multiply such runtimes where the for loops are nested and result to a runtime of `O(a * b)` or `O(ab)`. 
   
 </details>
+
+</br>
 
 #### Challenge 4
 
@@ -328,6 +334,8 @@ The runtime is `O(ab)` regardless of the third `for loop`, remember when it come
 
 </details>
 
+</br>
+
 #### Challenge 5
 
 What is the runtime complexity of the given algorithm? 
@@ -347,6 +355,7 @@ The runtime is `O(n)` despite the fact that we only iterate through first half o
   
 </details>
 
+</br>
 
 #### Challenge 6
 
@@ -358,6 +367,8 @@ You are looking for a specific value in a binary tree, but the tree is not a bin
 If the tree is not a BST, then worst case is you have to visit each node making it a runtime of `O(n)`. 
 
 </details>
+
+</br>
 
 
 #### Challenge 7
@@ -381,6 +392,8 @@ The runtime in this example is `O(b)`.
 
 </details>
 
+</br>
+
 #### Challenge 8
 
 What is the runtime complexity of the given algorithm? 
@@ -402,6 +415,8 @@ In this recursive call, at each call to `power(:_)` b is decremented by 1, thus 
 
 </details>
 
+</br>
+
 
 ## 2. Space Complexity
 
@@ -421,6 +436,8 @@ func addNumbers(a: Int, b: Int, c: Int) -> Int {
 Space complexity is `O(1)`. a + b + c or 8 bytes + 8 bytes + 8 bytes = 24 bytes, we ignore constants as with calculating runtime and get a constant space complexity. 
 
 </details>
+
+</br>
 
 #### Challenge 2
 
@@ -443,6 +460,7 @@ Here we have an array of Double, the size of a Double is 8 bytes. The array has 
 
 </details>
 
+</br>
 
 #### Challenge 3
 
@@ -461,6 +479,7 @@ func square(_ value: Int) -> Int {
 
 </details>
 
+</br>
 
 #### Challenge 4
 
@@ -485,6 +504,7 @@ This algorithim is not taking up extra memory than supplied by the input. The in
 
 </details>
 
+</br>
 
 #### Challenge 5
 
@@ -508,6 +528,8 @@ In this example the variable `list` array scales linearlly with the size of the 
 
 </details>
 
+</br>
+
 #### Challenge 6
 
 What is the space complexity of the given algorithm? 
@@ -529,6 +551,8 @@ In this example no auxillary space is used by the `printList(:_)` function. Reca
 
 </details>
 
+</br>
+
 #### Challenge 7
 
 What is the space complexity of the given algorithm? 
@@ -549,6 +573,8 @@ func inputSize(_ size: Int) {
 An array of size `n` has been allocated in the `inputSize(_:)` function, when we calculate the memory footprint we see that `n * 8 bytes` results in a space complexity of `O(n)`.
 
 </details>
+
+</br>
 
 ## Resources 
 
