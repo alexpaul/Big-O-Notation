@@ -4,6 +4,12 @@ Big O. Time and Space complexity.
 
 In Computer Science and Programming the way in which we measure the performance and efficiency of algorithms is using **Big O notation**, _denoted_ `O()`. 
 
+Some rules when calculating Big O: 
+* Different steps not nested gets added. 
+* We drop the constants as we are only concerned with how the algorithm scales with repect to the runtime. 
+* If the inputs are different, we use different variable names. 
+* In an algorithm we drop the non-dominant terms e.g `O(n + n ^ 2)` becomes `O(n ^ 2)`. 
+
 ## Runtime Complexity 
 
 Runtime complexity is used to describe the efficiency of a given algorithm as the size of the input grows. 
