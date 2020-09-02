@@ -586,4 +586,5 @@ An array of size `n` has been allocated in the `inputSize(_:)` function, when we
 6. [Apple docs - Memory footprint of a given instance](https://developer.apple.com/documentation/swift/memorylayout/2486283-size)
 7. [moducode - Time & Space Complexity in Functions – Big O Notation](https://moducode.com/blog/time-space-complexity-functions-big-o-notation/)
 8. [HWS - Measuring executing speed](https://www.hackingwithswift.com/example-code/system/measuring-execution-speed-using-cfabsolutetimegetcurrent)
+9. [Interview Cake - Call Stack](https://www.interviewcake.com/concept/java/call-stack)
 
